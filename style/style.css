@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.list-container{
+    display: flex;
+    gap: 25px;
+}
+
+.list-container li{
+    list-style: none;
+
+}
+.list-container a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.home{
+    color: orange;
+}
+.about{
+    color: skyblue;
+}
+.facilities{
+    color: rgb(5, 212, 223);
+}
+.admission{
+    color: rgb(93, 88, 239);
+}
+.menu-icon{
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-btn{
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.school{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    margin-left: 20px;
+}
+        /* banner section */
+.banner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:576px){
+    .list-container{
+        display: none;
+    }
+    .logo .school{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .logo{
+        text-align: left;
+    }
+    .navbar{
+        border-bottom: 1px solid orange;
+    }
+    
+}
